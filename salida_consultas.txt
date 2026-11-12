@@ -1,0 +1,46 @@
+=== PARTE D: consultas de horario (A*, solo tramos accesibles) ===
+
+--- Entrada Principal -> Lab. Sistemas a las 17:45 ---
+[A*] 6 tramos, costo 388.9, 15 nodos explorados
+    Entrada Principal -> Porteria Norte -> Bloque A -> Aula Maxima -> Sala de Profesores -> Sala de Computo 1 -> Lab. Sistemas
+
+--- Entrada Principal -> Lab. Sistemas a las 18:15 ---
+[A*] SIN RUTA Entrada Principal -> Lab. Sistemas: no existe ruta accesible a las 18:15 (se exploraron 59 nodos alcanzables y ninguno llega al destino).
+    Diagnostico: SI existe ruta accesible cuando las puertas estan abiertas (costo 388.9); el bloqueo es por el horario de cierre (18:00).
+    Respuesta para Bienestar: a esta hora NO hay ruta accesible; consultar de nuevo antes de las 18:00 o pedir que se habilite la puerta.
+
+--- Entrada Principal -> Laboratorio de Redes a las 17:45 ---
+[A*] 8 tramos, costo 523.2, 26 nodos explorados
+    Entrada Principal -> Porteria Norte -> Bloque A -> Aula Maxima -> Sala de Profesores -> Sala de Computo 1 -> Sala de Computo 2 -> Cafeteria Sur -> Laboratorio de Redes
+
+--- Entrada Principal -> Laboratorio de Redes a las 18:15 ---
+[A*] 12 tramos, costo 747.4, 35 nodos explorados
+    Entrada Principal -> Porteria Norte -> Bloque A -> Aula Maxima -> Sala de Profesores -> Bloque B -> Cafeteria Central -> Biblioteca -> Hemeroteca -> Centro de Idiomas -> Kiosco -> Cafeteria Sur -> Laboratorio de Redes
+
+=== PARTE C: nodos explorados por algoritmo (misma consulta) ===
+
+Consulta: Entrada Principal -> Laboratorio de Redes a las 17:45 (solo accesible=True)
+Algoritmo                Explorados  Tramos     Costo  Optimo en costo
+BFS                              32       8     524.0  no
+DFS                              18      16    1045.7  no
+Dijkstra (A* con h=0)            33       8     523.2  si
+A*                               26       8     523.2  si
+
+Consulta: Biblioteca -> Zona Verde a las 17:45 (solo accesible=True)
+Algoritmo                Explorados  Tramos     Costo  Optimo en costo
+BFS                              53       8     575.9  no
+DFS                              47      12     758.1  no
+Dijkstra (A* con h=0)            56       8     496.9  si
+A*                               29       8     496.9  si
+
+Consulta: Plazoleta de Banderas -> Sala de Estudio a las 17:45 (solo accesible=True)
+Algoritmo                Explorados  Tramos     Costo  Optimo en costo
+BFS                              46      12     771.8  no
+DFS                              26      20    1364.7  no
+Dijkstra (A* con h=0)            44      12     728.8  si
+A*                               40      12     728.8  si
+
+=== Mismas rutas con las tres representaciones (deben coincidir) ===
+Matriz n x n             costo 523.2  explorados 26
+Lista de adyacencia      costo 523.2  explorados 26
+Matriz dispersa (CSR)    costo 523.2  explorados 26
