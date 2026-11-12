@@ -19,18 +19,18 @@ NOMBRES = [
     "Biblioteca", "Auditorio", "Bloque C", "Parqueadero Norte", "Coliseo",
     # fila 1
     "Plazoleta de Banderas", "Bienestar Universitario", "Aula Maxima", "Sala de Profesores",
-    "Admisiones", "Hemeroteca", "Lab. Fisica", "Lab. Quimica", "Bloque D", "Gimnasio",
+    "Admisiones", "Hemeroteca", "Lab. Fluidos e Hidraulica", "Lab. Geotecnia y Pavimentos", "Bloque D", "Gimnasio",
     # fila 2
     "Tesoreria", "Registro Academico", "Lab. Sistemas", "Sala de Computo 1", "Sala de Computo 2",
-    "Centro de Idiomas", "Cancha Multiple", "Bloque E", "Enfermeria", "Piscina",
+    "Media LAB Aula Mac", "Cancha Multiple", "Bloque E", "Clinica Odontologica", "Piscina",
     # fila 3
-    "Bloque F", "Papeleria", "Mirador", "Jardin Botanico", "Cafeteria Sur",
-    "Kiosco", "Sala de Estudio", "Bloque G", "Taller de Diseno", "Vivero",
+    "Bloque F", "Consultorio Psicologico", "NAF Contable y Fiscal", "Jardin Botanico", "Cafeteria Sur",
+    "Kiosco", "Sala de Estudio", "Bloque G", "Estudio de Television", "Vivero",
     # fila 4
     "Capilla", "Consultorio Juridico", "Bloque H", "Aula 401", "Laboratorio de Redes",
-    "Fotocopiadora", "Emprendimiento", "Bloque I", "Cancha de Tenis", "Zona Verde",
+    "Fotocopiadora", "Impact Campus", "Bloque I", "Cancha de Tenis", "Zona Verde",
     # fila 5
-    "Porteria Sur", "Parqueadero Sur", "Bloque J", "Teatro al Aire Libre", "Sala de Musica",
+    "Porteria Sur", "Parqueadero Sur", "Bloque J", "Teatro al Aire Libre", "Estudio de Radio",
     "Aula 501", "Bloque K", "Bloque L", "Porteria Oriente", "Bodega",
 ]
 assert len(NOMBRES) == COLUMNAS * FILAS == 60

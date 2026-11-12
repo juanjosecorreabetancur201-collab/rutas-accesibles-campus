@@ -37,15 +37,21 @@ Como `pendiente ≥ 0`, `costo ≥ dist ≥ línea recta`, que es la propiedad q
 
 ## 4. Mapa usado
 
-El mapa es una **simplificación** (cuadrícula de 10 columnas × 6 filas con desfases fijos de coordenadas) con nombres de puntos típicos de un campus. Se partió de las 104 conexiones posibles de la cuadrícula y se quitaron 14 (edificios/desniveles) → **90 tramos**. Para la sustentación se puede reemplazar por los nombres y coordenadas del campus real editando `campus_data.py`; el resto del código no cambia.
+### Origen del mapa (qué es real y qué es simulado)
+
+- **Real:** nueve de los puntos llevan nombres de ambientes que la UCC publica para la sede Medellín - Envigado (Lab. Fluidos e Hidráulica, Lab. Geotecnia y Pavimentos, Media LAB Aula Mac, Estudio de Televisión, Estudio de Radio, Clínica Odontológica, Consultorio Psicológico, Consultorio Jurídico, Impact Campus, NAF Contable y Fiscal).
+- **Simulado:** la disposición, las coordenadas, las distancias, las pendientes, las escaleras, las obras y las puertas que cierran a las 18:00 son datos **inventados** para probar el algoritmo. No corresponden a un plano oficial del campus y no deben leerse como tales.
+- **Construcción:** cuadrícula de 10 columnas × 6 filas con desfases fijos de coordenadas. Se partió de las 104 conexiones posibles y se quitaron 14 (edificios/desniveles) → **90 tramos**.
+
+Para reemplazarlo por datos medidos en el campus basta editar `campus_data.py`; el resto del código no cambia.
 
 | Fila | Col 0 | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 | Col 9 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 0 | 0 Entrada Principal | 1 Portería Norte | 2 Bloque A | 3 Bloque B | 4 Cafetería Central | 5 Biblioteca | 6 Auditorio | 7 Bloque C | 8 Parqueadero Norte | 9 Coliseo |
 | 1 | 10 Plazoleta de Banderas | 11 Bienestar Univ. | 12 Aula Máxima | 13 Sala de Profesores | 14 Admisiones | 15 Hemeroteca | 16 Lab. Física | 17 Lab. Química | 18 Bloque D | 19 Gimnasio |
-| 2 | 20 Tesorería | 21 Registro Académico | 22 **Lab. Sistemas** | 23 Sala de Cómputo 1 | 24 Sala de Cómputo 2 | 25 Centro de Idiomas | 26 Cancha Múltiple | 27 Bloque E | 28 Enfermería | 29 Piscina |
-| 3 | 30 Bloque F | 31 Papelería | 32 Mirador | 33 Jardín Botánico | 34 Cafetería Sur | 35 Kiosco | 36 Sala de Estudio | 37 Bloque G | 38 Taller de Diseño | 39 Vivero |
-| 4 | 40 Capilla | 41 Consultorio Jurídico | 42 Bloque H | 43 Aula 401 | 44 **Laboratorio de Redes** | 45 Fotocopiadora | 46 Emprendimiento | 47 Bloque I | 48 Cancha de Tenis | 49 Zona Verde |
+| 2 | 20 Tesorería | 21 Registro Académico | 22 **Lab. Sistemas** | 23 Sala de Cómputo 1 | 24 Sala de Cómputo 2 | 25 Media LAB Aula Mac | 26 Cancha Múltiple | 27 Bloque E | 28 Enfermería | 29 Piscina |
+| 3 | 30 Bloque F | 31 Papelería | 32 NAF Contable y Fiscal | 33 Jardín Botánico | 34 Cafetería Sur | 35 Kiosco | 36 Sala de Estudio | 37 Bloque G | 38 Taller de Diseño | 39 Vivero |
+| 4 | 40 Capilla | 41 Consultorio Jurídico | 42 Bloque H | 43 Aula 401 | 44 **Laboratorio de Redes** | 45 Fotocopiadora | 46 Impact Campus | 47 Bloque I | 48 Cancha de Tenis | 49 Zona Verde |
 | 5 | 50 Portería Sur | 51 Parqueadero Sur | 52 Bloque J | 53 Teatro al Aire Libre | 54 Sala de Música | 55 Aula 501 | 56 Bloque K | 57 Bloque L | 58 Portería Oriente | 59 Bodega |
 
 ### Restricciones del mapa

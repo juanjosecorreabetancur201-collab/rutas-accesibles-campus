@@ -52,6 +52,6 @@ DFS explora menos porque se conforma con cualquier ruta, no con la mejor. BFS mi
 
 ## Notas honestas
 
-- El mapa es una **simplificación** con nombres genéricos de un campus. El enunciado pide un mapa "simplificado, pero real": reemplaza nombres y coordenadas en `campus_data.py` por los de tu campus antes de entregar.
+- El mapa es **simulado**: solo algunos nombres de puntos son ambientes reales de la UCC Medellin - Envigado; distancias, pendientes, escaleras, obras y puertas son inventadas (ver `modelo.md`). No lo presentes como un plano oficial; si puedes verificar datos reales del campus, edita `campus_data.py`.
 - La columna "Medido Python" de la tabla de memoria usa `tracemalloc` y varía un poco entre ejecuciones; la decisión se justifica con el modelo teórico.
 - Antes de entregar: sube todo a GitHub, comprueba `pytest` en una máquina limpia y verifica que el último commit sea anterior al domingo de la semana 14, 23:59.

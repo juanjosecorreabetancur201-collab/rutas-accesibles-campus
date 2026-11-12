@@ -1,4 +1,4 @@
-﻿=== PARTE D: consultas de horario (A*, solo tramos accesibles) ===
+=== PARTE D: consultas de horario (A*, solo tramos accesibles) ===
 
 --- Entrada Principal -> Lab. Sistemas a las 17:45 ---
 [A*] 6 tramos, costo 388.9, 15 nodos explorados
@@ -15,7 +15,7 @@
 
 --- Entrada Principal -> Laboratorio de Redes a las 18:15 ---
 [A*] 12 tramos, costo 747.4, 35 nodos explorados
-    Entrada Principal -> Porteria Norte -> Bloque A -> Aula Maxima -> Sala de Profesores -> Bloque B -> Cafeteria Central -> Biblioteca -> Hemeroteca -> Centro de Idiomas -> Kiosco -> Cafeteria Sur -> Laboratorio de Redes
+    Entrada Principal -> Porteria Norte -> Bloque A -> Aula Maxima -> Sala de Profesores -> Bloque B -> Cafeteria Central -> Biblioteca -> Hemeroteca -> Media LAB Aula Mac -> Kiosco -> Cafeteria Sur -> Laboratorio de Redes
 
 === PARTE C: nodos explorados por algoritmo (misma consulta) ===
 
