@@ -1,4 +1,4 @@
-=== PARTE D: consultas de horario (A*, solo tramos accesibles) ===
+﻿=== PARTE D: consultas de horario (A*, solo tramos accesibles) ===
 
 --- Entrada Principal -> Lab. Sistemas a las 17:45 ---
 [A*] 6 tramos, costo 388.9, 15 nodos explorados
